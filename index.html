@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keystone Digital Corp - Building Apps That Matter</title>
+    <meta name="description" content="Keystone Digital creates consumer and business apps for real people. HomeBeacon, FamilyShift, and AI agents for local businesses.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        keystone: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d3fe',
+                            300: '#a4b1fc',
+                            400: '#818cf8',
+                            500: '#4F46E5',
+                            600: '#4338ca',
+                            700: '#3730a3',
+                            800: '#312e81',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-2">
+                    <div class="text-2xl font-bold text-keystone-600">Keystone Digital</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#products" class="text-gray-600 hover:text-keystone-600 transition">Products</a>
+                    <a href="#about" class="text-gray-600 hover:text-keystone-600 transition">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-keystone-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-keystone-50 to-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    Building Apps That Matter
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Keystone Digital creates consumer and business apps for real people. 
+                    Tech built by workers, for workers — not corporate, not startup-bro, just useful.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#products" class="bg-keystone-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-keystone-700 transition">
+                        See Our Apps
+                    </a>
+                    <a href="#contact" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
+                <p class="text-lg text-gray-600">Apps solving real problems for real people</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- HomeBeacon -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-6xl">🏠</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">HomeBeacon</h3>
+                        <p class="text-gray-600 mb-4">
+                            Senior wellness monitoring for families. Share wellness, not surveillance. 
+                            Daily wellness scores, pattern alerts, medication reminders.
+                        </p>
+                        <a href="https://frontend-six-blond-57.vercel.app" target="_blank" class="text-keystone-600 font-medium hover:underline">
+                            Learn more →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FamilyShift -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-6xl">👨‍👩‍👧‍👦</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">FamilyShift</h3>
+                        <p class="text-gray-600 mb-4">
+                            Caregiver coordination platform. Shared calendars, task assignments, 
+                            care journals, expense tracking for families caring for aging parents.
+                        </p>
+                        <span class="text-gray-400 text-sm">Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- AgentHub -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-6xl">🤖</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">AgentHub</h3>
+                        <p class="text-gray-600 mb-4">
+                            AI receptionists for local businesses. HVAC, mechanics, salons, coffee shops. 
+                            Answer calls, book appointments, send follow-ups, generate reviews.
+                        </p>
+                        <span class="text-gray-400 text-sm">Coming Soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Products -->
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <!-- Tarot Decision App -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-40 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-5xl">🎴</div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Tarot Decision App</h3>
+                        <p class="text-gray-600 mb-3">
+                            Decision-making tarot readings. Career, relationships, life path. 
+                            One-time purchase, not subscription.
+                        </p>
+                        <a href="https://tarot-decision-demo.vercel.app" target="_blank" class="text-keystone-600 font-medium hover:underline">
+                            Try demo →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Future Products -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-40 bg-gray-200 flex items-center justify-center">
+                        <div class="text-5xl text-gray-400">🚧</div>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">More Products Coming</h3>
+                        <p class="text-gray-600 mb-3">
+                            GigTrack, ShopBoss, and more apps for workers and small businesses. 
+                            Stay tuned.
+                        </p>
+                        <span class="text-gray-400 text-sm">In Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About Keystone Digital</h2>
+                    <div class="space-y-4 text-gray-700">
+                        <p>
+                            Keystone Digital was founded by James, a dad from Princeton, Kentucky who spent 20+ years working physical jobs — Walmart produce departments, correctional officer, industrial supply.
+                        </p>
+                        <p>
+                            After two decades of lifting 40-60 lb crates and walking 10-21k steps a day, James saw AI and agents as the future of work. He wanted to get ahead of it — not just learn to code, but build things that matter.
+                        </p>
+                        <p>
+                            Every app we build starts from a real problem: HomeBeacon for his mom's wellness, FamilyShift for coordinating family care, AgentHub for local businesses drowning in admin work.
+                        </p>
+                        <p>
+                            This isn't Silicon Valley tech. This is blue-collar tech — built by workers, for workers. No corporate jargon, no startup-bro energy, just useful tools for real people.
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl p-8 shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <span class="text-keystone-600 mr-3">✓</span>
+                            <span class="text-gray-700">Build apps that solve real problems</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-600 mr-3">✓</span>
+                            <span class="text-gray-700">Tech for workers, not just techies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-600 mr-3">✓</span>
+                            <span class="text-gray-700">Fair pricing, no subscription traps</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-600 mr-3">✓</span>
+                            <span class="text-gray-700">Privacy-first, always</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-600 mr-3">✓</span>
+                            <span class="text-gray-700">Built with heart in Kentucky</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
+                <p class="text-lg text-gray-600">Questions about our apps? Want to work together?</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto bg-gray-50 rounded-xl p-8">
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Support</h3>
+                        <p class="text-gray-600">For app support and questions:</p>
+                        <p class="text-keystone-600 font-medium mt-1">support@keystonedigitalcorp.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Business Inquiries</h3>
+                        <p class="text-gray-600">For partnerships and business questions:</p>
+                        <p class="text-keystone-600 font-medium mt-1">hello@keystonedigitalcorp.com</p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Location</h3>
+                        <p class="text-gray-600">Princeton, Kentucky</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-xl font-bold text-white mb-4">Keystone Digital</div>
+                    <p class="text-gray-400">Building apps that matter for real people.</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Products</div>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">HomeBeacon</a></li>
+                        <li><a href="#" class="hover:text-white transition">FamilyShift</a></li>
+                        <li><a href="#" class="hover:text-white transition">AgentHub</a></li>
+                        <li><a href="https://tarot-decision-demo.vercel.app" class="hover:text-white transition">Tarot Decision App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Company</div>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Keystone Digital Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
