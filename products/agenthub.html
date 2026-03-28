@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>AgentHub - AI Receptionists for Local Businesses | Keystone Digital</title>
+    <meta name="description" content="AgentHub provides AI receptionists for local businesses. HVAC, mechanics, salons, coffee shops. Answer calls, book appointments, send follow-ups, generate reviews.">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKXVEZH3DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DKXVEZH3DL');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        keystone: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d3fe',
+                            300: '#a4b1fc',
+                            400: '#818cf8',
+                            500: '#4F46E5',
+                            600: '#4338ca',
+                            700: '#3730a3',
+                            800: '#312e81',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="../index.html" class="text-2xl font-bold text-keystone-600">Keystone Digital</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html#products" class="text-gray-600 hover:text-keystone-600 transition">Products</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-keystone-600 transition">About</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-keystone-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-keystone-50 to-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="text-6xl mb-6">🤖</div>
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    AgentHub
+                </h1>
+                <p class="text-2xl text-gray-700 mb-4">
+                    AI receptionists for local businesses
+                </p>
+                <p class="text-xl text-gray-600 mb-8">
+                    HVAC, mechanics, salons, coffee shops — stop missing calls. AgentHub answers 24/7, books appointments, sends follow-ups, and generates reviews. No answering service markup.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="bg-gray-300 text-gray-600 px-8 py-4 rounded-lg font-semibold text-lg cursor-not-allowed">
+                        Coming Soon
+                    </a>
+                    <a href="../contact.html" class="border-2 border-keystone-600 text-keystone-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-keystone-50 transition">
+                        Join Waitlist
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">Early access pricing • Limited beta spots available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">The Local Business Problem</h2>
+                <p class="text-xl text-gray-600">You're great at your trade. Admin work is killing you.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-red-50 rounded-xl p-8 border border-red-100">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Missed Calls = Lost Revenue</h3>
+                    <p class="text-gray-700">
+                        You're under a hood, cutting hair, or fixing HVAC. Phone rings. You can't answer. That's a customer calling your competitor instead. 62% of callers hang up after one missed call.
+                    </p>
+                </div>
+                <div class="bg-orange-50 rounded-xl p-8 border border-orange-100">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Appointment Chaos</h3>
+                    <p class="text-gray-700">
+                        Phone tag, double-bookings, no-shows. You're spending hours managing the calendar instead of doing paid work. Answering services cost $200-400/month.
+                    </p>
+                </div>
+                <div class="bg-yellow-50 rounded-xl p-8 border border-yellow-100">
+                    <div class="text-4xl mb-4">⭐</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Review Generation</h3>
+                    <p class="text-gray-700">
+                        Happy customers forget to leave reviews. You forget to ask. Your Google rating stagnates while competitors game the system.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-keystone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">The AgentHub Solution</h2>
+                <p class="text-xl text-gray-600">Your AI receptionist works 24/7. Never sleeps, never misses a call.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📞</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Answer Calls 24/7</h3>
+                        <p class="text-gray-700 mb-4">
+                            AgentHub answers every call, day or night. Handles common questions: "Are you open?", "Do you do [service]?", "What's your pricing?"
+                        </p>
+                        <p class="text-gray-700">
+                            Escalates complex calls to you via text. You decide if it's urgent.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📅</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Book Appointments</h3>
+                        <p class="text-gray-700 mb-4">
+                            AgentHub integrates with your calendar (Google, Calendly, or built-in). Books appointments in real-time, sends confirmations, handles rescheduling.
+                        </p>
+                        <p class="text-gray-700">
+                            No more phone tag. No more double-bookings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">💬</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">SMS Follow-ups</h3>
+                        <p class="text-gray-700 mb-4">
+                            After service, AgentHub sends automated follow-ups: "How did we do?", "Need anything else?", "Here's your invoice."
+                        </p>
+                        <p class="text-gray-700">
+                            Professional, timely, consistent. No forgotten follow-ups.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">⭐</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Generate Reviews</h3>
+                        <p class="text-gray-700 mb-4">
+                            Happy customer? AgentHub asks for a Google review at the perfect moment. Makes it easy with direct links. Tracks review velocity.
+                        </p>
+                        <p class="text-gray-700">
+                            Watch your rating climb. More reviews = more customers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📊</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Call Analytics</h3>
+                        <p class="text-gray-700 mb-4">
+                            See call volume, peak hours, common questions, missed opportunities. Make data-driven decisions about staffing, hours, services.
+                        </p>
+                        <p class="text-gray-700">
+                            Know your business better.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">🔧</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Industry-Specific</h3>
+                        <p class="text-gray-700 mb-4">
+                            Pre-trained for HVAC, auto repair, salons, coffee shops, and more. Knows your industry terminology, common services, typical pricing questions.
+                        </p>
+                        <p class="text-gray-700">
+                            Setup in minutes, not weeks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Features</h2>
+                <p class="text-xl text-gray-600">Everything local businesses need to automate admin work</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📞</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">24/7 Call Answering</h3>
+                    <p class="text-gray-600">Never miss a call, day or night</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📅</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Appointment Booking</h3>
+                    <p class="text-gray-600">Real-time calendar integration</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">💬</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">SMS Follow-ups</h3>
+                    <p class="text-gray-600">Automated post-service messages</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">⭐</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Review Generation</h3>
+                    <p class="text-gray-600">Ask at the right moment</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📊</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Call Analytics</h3>
+                    <p class="text-gray-600">Volume, trends, insights</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🔧</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Industry Templates</h3>
+                    <p class="text-gray-600">HVAC, auto, salon, retail</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📱</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Call Forwarding</h3>
+                    <p class="text-gray-600">Escalate urgent calls to you</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🌐</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Website Widget</h3>
+                    <p class="text-gray-600">Click-to-call, chat backup</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Secure & Compliant</h3>
+                    <p class="text-gray-600">Call recording, data protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="py-20 bg-keystone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Built for Your Industry</h2>
+                <p class="text-xl text-gray-600">Pre-trained templates for common local businesses</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow">
+                    <div class="text-4xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">HVAC</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Emergency vs. routine</li>
+                        <li>• Service area questions</li>
+                        <li>• Pricing estimates</li>
+                        <li>• Maintenance plans</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow">
+                    <div class="text-4xl mb-4">🚗</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Auto Repair</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Appointment booking</li>
+                        <li>• Service type questions</li>
+                        <li>• Pickup/delivery</li>
+                        <li>• Estimate follow-ups</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow">
+                    <div class="text-4xl mb-4">💇</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Salons</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Stylist availability</li>
+                        <li>• Service menu</li>
+                        <li>• Cancellation policy</li>
+                        <li>• Product questions</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow">
+                    <div class="text-4xl mb-4">☕</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Coffee Shops</h3>
+                    <ul class="text-gray-700 space-y-2">
+                        <li>• Hours & location</li>
+                        <li>• Catering orders</li>
+                        <li>• Event bookings</li>
+                        <li>• Wholesale inquiries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Pricing (Planned)</h2>
+                <p class="text-xl text-gray-600">Cheaper than an answering service. Pays for itself in 1-2 saved calls.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Tier -->
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-gray-200 opacity-75">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Starter</h3>
+                    <p class="text-gray-600 mb-6">Solo operators</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$49<span class="text-lg text-gray-500 font-normal">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Up to 100 calls/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Call answering</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">SMS follow-ups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Basic analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-400 mr-3">✗</span>
+                            <span class="text-gray-400">Appointment booking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-400 mr-3">✗</span>
+                            <span class="text-gray-400">Review generation</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-gray-200 text-gray-500 px-6 py-3 rounded-lg font-medium cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Professional Tier -->
+                <div class="bg-keystone-600 rounded-xl shadow-xl p-8 border-2 border-keystone-500 transform scale-105">
+                    <div class="text-keystone-200 text-sm font-semibold mb-2">EXPECTED MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Professional</h3>
+                    <p class="text-keystone-100 mb-6">Growing businesses</p>
+                    <div class="text-4xl font-bold text-white mb-6">$99<span class="text-lg text-keystone-200 font-normal">/month</span></div>
+                    <div class="text-keystone-200 text-sm mb-6">or $990/year (save 17%)</div>
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Everything in Starter</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Up to 500 calls/month</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Appointment booking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Review generation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Advanced analytics</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-white text-keystone-600 px-6 py-3 rounded-lg font-semibold cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Business Tier -->
+                <div class="bg-gray-50 rounded-xl shadow-lg p-8 border-2 border-gray-200 opacity-75">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Business</h3>
+                    <p class="text-gray-600 mb-6">Multi-location, high volume</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$199<span class="text-lg text-gray-500 font-normal">/month</span></div>
+                    <div class="text-gray-500 text-sm mb-6">or $1,990/year (save 17%)</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Everything in Professional</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Unlimited calls</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Multiple locations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Custom integrations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Dedicated support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Custom training</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-gray-200 text-gray-500 px-6 py-3 rounded-lg font-medium cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600">
+                    <span class="font-semibold">Compare to answering services:</span> $200-400/month for human receptionists who miss details.
+                    <br/>
+                    <span class="text-keystone-600">AgentHub: 24/7, consistent, never calls in sick.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Calculator -->
+    <section class="py-20 bg-keystone-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What's a Missed Call Worth?</h2>
+                <p class="text-xl text-gray-600">Do the math. AgentHub pays for itself fast.</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg">
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-keystone-600 mb-2">1</div>
+                        <p class="text-gray-700">Saved call per month</p>
+                        <p class="text-sm text-gray-500 mt-2">= Pays for Starter plan</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-keystone-600 mb-2">2-3</div>
+                        <p class="text-gray-700">Saved calls per month</p>
+                        <p class="text-sm text-gray-500 mt-2">= Pays for Professional plan</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-keystone-600 mb-2">5+</div>
+                        <p class="text-gray-700">Saved calls per month</p>
+                        <p class="text-sm text-gray-500 mt-2">= Pure profit increase</p>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-8">
+                    Average job value: $150-500 (HVAC, auto repair) | $50-150 (salon) | $5-20 (coffee, retail)<br/>
+                    <span class="font-semibold">How many calls do you miss per week?</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section class="py-20 bg-gradient-to-br from-keystone-600 to-keystone-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Stop Missing Calls?</h2>
+            <p class="text-xl text-keystone-100 mb-8">
+                Join the waitlist. Early beta testers get 50% off first year.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../contact.html" class="bg-white text-keystone-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-keystone-50 transition shadow-lg">
+                    Join Waitlist
+                </a>
+                <a href="../contact.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-keystone-600 transition">
+                    Request Demo
+                </a>
+            </div>
+            <p class="text-keystone-200 mt-6">Limited beta spots • 50% off for early adopters</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-xl font-bold text-white mb-4">Keystone Digital</div>
+                    <p class="text-gray-400">Building apps that matter for real people.</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Products</div>
+                    <ul class="space-y-2">
+                        <li><a href="homebeacon.html" class="hover:text-white transition">HomeBeacon</a></li>
+                        <li><a href="familyshift.html" class="hover:text-white transition">FamilyShift</a></li>
+                        <li><a href="agenthub.html" class="text-white transition">AgentHub</a></li>
+                        <li><a href="https://tarot-decision-demo.vercel.app" class="hover:text-white transition">Tarot Decision App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Company</div>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Keystone Digital Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

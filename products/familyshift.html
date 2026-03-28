@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>FamilyShift - Caregiver Coordination Platform | Keystone Digital</title>
+    <meta name="description" content="FamilyShift helps families coordinate care for aging parents. Shared calendars, task assignments, care journals, expense tracking. No more group chat chaos.">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKXVEZH3DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DKXVEZH3DL');
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        keystone: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d3fe',
+                            300: '#a4b1fc',
+                            400: '#818cf8',
+                            500: '#4F46E5',
+                            600: '#4338ca',
+                            700: '#3730a3',
+                            800: '#312e81',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="../index.html" class="text-2xl font-bold text-keystone-600">Keystone Digital</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html#products" class="text-gray-600 hover:text-keystone-600 transition">Products</a>
+                    <a href="../about.html" class="text-gray-600 hover:text-keystone-600 transition">About</a>
+                    <a href="../contact.html" class="text-gray-600 hover:text-keystone-600 transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-keystone-50 to-white py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto">
+                <div class="text-6xl mb-6">👨‍👩‍👧‍👦</div>
+                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                    FamilyShift
+                </h1>
+                <p class="text-2xl text-gray-700 mb-4">
+                    Caregiver coordination for families
+                </p>
+                <p class="text-xl text-gray-600 mb-8">
+                    Shared calendars, task assignments, care journals, and expense tracking — so your family can coordinate care without the group chat chaos.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#" class="bg-gray-300 text-gray-600 px-8 py-4 rounded-lg font-semibold text-lg cursor-not-allowed">
+                        Coming Soon
+                    </a>
+                    <a href="../contact.html" class="border-2 border-keystone-600 text-keystone-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-keystone-50 transition">
+                        Get Notified
+                    </a>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">Join the waitlist • Early access for HomeBeacon families</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">The Caregiver Coordination Problem</h2>
+                <p class="text-xl text-gray-600">When multiple family members are involved, things get messy fast</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-red-50 rounded-xl p-8 border border-red-100">
+                    <div class="text-4xl mb-4">📱</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Group Chat Chaos</h3>
+                    <p class="text-gray-700">
+                        "Who took mom to her appointment?" "Did someone refill her meds?" "What did the doctor say?" Important info gets lost in the noise.
+                    </p>
+                </div>
+                <div class="bg-orange-50 rounded-xl p-8 border border-orange-100">
+                    <div class="text-4xl mb-4">📅</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Scheduling Nightmares</h3>
+                    <p class="text-gray-700">
+                        Doctor appointments, pharmacy runs, grocery shopping, social visits. Coordinating across siblings' schedules is a full-time job.
+                    </p>
+                </div>
+                <div class="bg-yellow-50 rounded-xl p-8 border border-yellow-100">
+                    <div class="text-4xl mb-4">💰</div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Expense Confusion</h3>
+                    <p class="text-gray-700">
+                        Who paid for what? Who owes who? Medical bills, groceries, gas money. The financial tracking becomes its own headache.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="py-20 bg-keystone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">The FamilyShift Solution</h2>
+                <p class="text-xl text-gray-600">One place for everything. Everyone on the same page.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📅</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Shared Care Calendar</h3>
+                        <p class="text-gray-700 mb-4">
+                            See all appointments, visits, and tasks in one calendar. Color-coded by family member. No more double-booking or missed appointments.
+                        </p>
+                        <p class="text-gray-700">
+                            Sync with Google Calendar, Apple Calendar, or use standalone.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">✅</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Task Assignments</h3>
+                        <p class="text-gray-700 mb-4">
+                            Assign tasks to family members: "Pick up meds," "Grocery shopping," "Saturday visit." Track completion, send reminders.
+                        </p>
+                        <p class="text-gray-700">
+                            Optional gentle nudges — no guilt trips.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📓</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Care Journal</h3>
+                        <p class="text-gray-700 mb-4">
+                            Log daily notes: "Mom seemed tired today," "Ate well," "Good mood after church." Family members can read and add their own observations.
+                        </p>
+                        <p class="text-gray-700">
+                            Pattern insights over time — see how mom's doing at a glance.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">💰</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Expense Tracking</h3>
+                        <p class="text-gray-700 mb-4">
+                            Log caregiving expenses: gas, meds, medical bills, groceries. Split costs fairly. Export for tax deductions.
+                        </p>
+                        <p class="text-gray-700">
+                            Transparent, no awkward money conversations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">📋</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Document Vault</h3>
+                        <p class="text-gray-700 mb-4">
+                            Store important documents: insurance cards, medication lists, advance directives, doctor contacts. Secure, encrypted, accessible to authorized family.
+                        </p>
+                        <p class="text-gray-700">
+                            Everything in one place during emergencies.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
+                        <div class="text-5xl mb-4">💬</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Family Updates</h3>
+                        <p class="text-gray-700 mb-4">
+                            Post updates that notify all family members: "Doctor visit summary," "Medication change," "Good news!" No more forwarding texts.
+                        </p>
+                        <p class="text-gray-700">
+                            Optional integration with HomeBeacon wellness data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Features</h2>
+                <p class="text-xl text-gray-600">Everything families need to coordinate care</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📅</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Shared Calendar</h3>
+                    <p class="text-gray-600">Appointments, visits, tasks in one view</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">✅</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Task Management</h3>
+                    <p class="text-gray-600">Assign, track, complete with reminders</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📓</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Care Journal</h3>
+                    <p class="text-gray-600">Daily notes, mood tracking, observations</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">💰</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Expense Splitting</h3>
+                    <p class="text-gray-600">Track costs, split fairly, export reports</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📁</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Document Vault</h3>
+                    <p class="text-gray-600">Secure storage for medical documents</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">📢</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Family Updates</h3>
+                    <p class="text-gray-600">Broadcast important info to all members</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🔔</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Smart Reminders</h3>
+                    <p class="text-gray-600">Gentle nudges, not guilt trips</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🔗</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">HomeBeacon Sync</h3>
+                    <p class="text-gray-600">Optional wellness data integration</p>
+                </div>
+                <div class="bg-gray-50 rounded-xl p-6">
+                    <div class="text-3xl mb-3">🔒</div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Privacy Controls</h3>
+                    <p class="text-gray-600">Granular permissions per family member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Preview -->
+    <section id="pricing" class="py-20 bg-keystone-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Pricing (Planned)</h2>
+                <p class="text-xl text-gray-600">Fair pricing for families. Early access discounts available.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Free Tier -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 opacity-75">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Free</h3>
+                    <p class="text-gray-600 mb-6">Basic coordination</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$0<span class="text-lg text-gray-500 font-normal">/month</span></div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Shared calendar</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Up to 5 family members</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Basic task assignments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-400 mr-3">✗</span>
+                            <span class="text-gray-400">Care journal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-gray-400 mr-3">✗</span>
+                            <span class="text-gray-400">Expense tracking</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-gray-200 text-gray-500 px-6 py-3 rounded-lg font-medium cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Family Tier -->
+                <div class="bg-keystone-600 rounded-xl shadow-xl p-8 border-2 border-keystone-500 transform scale-105">
+                    <div class="text-keystone-200 text-sm font-semibold mb-2">EXPECTED MOST POPULAR</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Family Plus</h3>
+                    <p class="text-keystone-100 mb-6">For active caregiving families</p>
+                    <div class="text-4xl font-bold text-white mb-6">$7.99<span class="text-lg text-keystone-200 font-normal">/month</span></div>
+                    <div class="text-keystone-200 text-sm mb-6">or $79/year (save 17%)</div>
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Everything in Free</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Unlimited family members</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Care journal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Expense tracking & splitting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>Document vault (5GB)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-keystone-200 mr-3">✓</span>
+                            <span>HomeBeacon integration</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-white text-keystone-600 px-6 py-3 rounded-lg font-semibold cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+
+                <!-- Premium Tier -->
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200 opacity-75">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Premium</h3>
+                    <p class="text-gray-600 mb-6">For professional caregivers</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">$14.99<span class="text-lg text-gray-500 font-normal">/month</span></div>
+                    <div class="text-gray-500 text-sm mb-6">or $149/year (save 17%)</div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Everything in Family Plus</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Multiple care recipients</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Document vault (50GB)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Export reports (PDF/CSV)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-green-600 mr-3">✓</span>
+                            <span class="text-gray-700">Priority support</span>
+                        </li>
+                    </ul>
+                    <button disabled class="block w-full text-center bg-gray-200 text-gray-500 px-6 py-3 rounded-lg font-medium cursor-not-allowed">
+                        Coming Soon
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600">
+                    <span class="font-semibold">Note:</span> Pricing is preliminary and may change before launch. 
+                    <br/>
+                    <span className="text-keystone-600">HomeBeacon families get 50% off first year.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist CTA -->
+    <section class="py-20 bg-gradient-to-br from-keystone-600 to-keystone-800">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Get Notified When FamilyShift Launches</h2>
+            <p class="text-xl text-keystone-100 mb-8">
+                Be first to know. Early access for HomeBeacon families.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../contact.html" class="bg-white text-keystone-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-keystone-50 transition shadow-lg">
+                    Join Waitlist
+                </a>
+                <a href="homebeacon.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-keystone-600 transition">
+                    Try HomeBeacon First
+                </a>
+            </div>
+            <p class="text-keystone-200 mt-6">Free to join • No spam, just launch updates</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="text-xl font-bold text-white mb-4">Keystone Digital</div>
+                    <p class="text-gray-400">Building apps that matter for real people.</p>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Products</div>
+                    <ul class="space-y-2">
+                        <li><a href="homebeacon.html" class="hover:text-white transition">HomeBeacon</a></li>
+                        <li><a href="familyshift.html" class="text-white transition">FamilyShift</a></li>
+                        <li><a href="../index.html#products" class="hover:text-white transition">AgentHub</a></li>
+                        <li><a href="https://tarot-decision-demo.vercel.app" class="hover:text-white transition">Tarot Decision App</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="font-semibold text-white mb-4">Company</div>
+                    <ul class="space-y-2">
+                        <li><a href="../about.html" class="hover:text-white transition">About</a></li>
+                        <li><a href="../contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Keystone Digital Corp. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
