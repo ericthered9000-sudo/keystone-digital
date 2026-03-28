@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>Keystone Digital Corp - Building Apps That Matter</title>
     <meta name="description" content="Keystone Digital creates consumer and business apps for real people. HomeBeacon, FamilyShift, and AI agents for local businesses.">
+    <meta name="theme-color" content="#4F46E5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKXVEZH3DL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DKXVEZH3DL');
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,41 +42,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
+        /* Mobile optimizations */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; line-height: 1.2; }
+            h2 { font-size: 1.75rem; }
+            h3 { font-size: 1.25rem; }
+            .btn-mobile { min-height: 48px; min-width: 48px; }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
-    <!-- Navigation -->
+    <!-- Navigation with Mobile Menu -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center space-x-2">
-                    <div class="text-2xl font-bold text-keystone-600">Keystone Digital</div>
-                </div>
+            <div class="flex justify-between items-center py-3">
+                <a href="index.html" class="text-xl font-bold text-keystone-600">Keystone Digital</a>
+                
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#products" class="text-gray-600 hover:text-keystone-600 transition">Products</a>
-                    <a href="#about" class="text-gray-600 hover:text-keystone-600 transition">About</a>
-                    <a href="#contact" class="text-gray-600 hover:text-keystone-600 transition">Contact</a>
+                    <a href="#products" class="text-gray-600 hover:text-keystone-600 transition btn-mobile">Products</a>
+                    <a href="about.html" class="text-gray-600 hover:text-keystone-600 transition btn-mobile">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-keystone-600 transition btn-mobile">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 btn-mobile" aria-label="Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden pb-3">
+                <div class="flex flex-col space-y-3">
+                    <a href="#products" class="text-gray-600 hover:text-keystone-600 transition py-2 btn-mobile">Products</a>
+                    <a href="about.html" class="text-gray-600 hover:text-keystone-600 transition py-2 btn-mobile">About</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-keystone-600 transition py-2 btn-mobile">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
+    
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-keystone-50 to-white py-20">
+    <section class="bg-gradient-to-br from-keystone-50 to-white py-12 md:py-20">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center max-w-3xl mx-auto">
-                <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6">
                     Building Apps That Matter
                 </h1>
-                <p class="text-xl text-gray-600 mb-8">
+                <p class="text-lg md:text-xl text-gray-600 mb-6 md:mb-8 leading-relaxed">
                     Keystone Digital creates consumer and business apps for real people. 
                     Tech built by workers, for workers — not corporate, not startup-bro, just useful.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#products" class="bg-keystone-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-keystone-700 transition">
+                <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                    <a href="#products" class="bg-keystone-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium hover:bg-keystone-700 transition btn-mobile text-base md:text-lg">
                         See Our Apps
                     </a>
-                    <a href="#contact" class="border border-gray-300 text-gray-700 px-8 py-3 rounded-lg font-medium hover:bg-gray-50 transition">
+                    <a href="#contact" class="border border-gray-300 text-gray-700 px-6 md:px-8 py-3 md:py-4 rounded-lg font-medium hover:bg-gray-50 transition btn-mobile text-base md:text-lg">
                         Get in Touch
                     </a>
                 </div>
@@ -74,26 +116,26 @@
     </section>
 
     <!-- Featured Products -->
-    <section id="products" class="py-20 bg-white">
+    <section id="products" class="py-12 md:py-20 bg-white">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Products</h2>
-                <p class="text-lg text-gray-600">Apps solving real problems for real people</p>
+            <div class="text-center mb-12 md:mb-16">
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-3 md:mb-4">Our Products</h2>
+                <p class="text-base md:text-lg text-gray-600">Apps solving real problems for real people</p>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                 <!-- HomeBeacon -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
-                        <div class="text-6xl">🏠</div>
+                    <div class="h-40 md:h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-5xl md:text-6xl">🏠</div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">HomeBeacon</h3>
-                        <p class="text-gray-600 mb-4">
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">HomeBeacon</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">
                             Senior wellness monitoring for families. Share wellness, not surveillance. 
                             Daily wellness scores, pattern alerts, medication reminders.
                         </p>
-                        <a href="https://frontend-six-blond-57.vercel.app" target="_blank" class="text-keystone-600 font-medium hover:underline">
+                        <a href="products/homebeacon.html" class="text-keystone-600 font-medium hover:underline inline-block py-2 btn-mobile">
                             Learn more →
                         </a>
                     </div>
@@ -101,31 +143,35 @@
 
                 <!-- FamilyShift -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
-                        <div class="text-6xl">👨‍👩‍👧‍👦</div>
+                    <div class="h-40 md:h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-5xl md:text-6xl">👨‍👩‍👧‍👦</div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">FamilyShift</h3>
-                        <p class="text-gray-600 mb-4">
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">FamilyShift</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">
                             Caregiver coordination platform. Shared calendars, task assignments, 
                             care journals, expense tracking for families caring for aging parents.
                         </p>
-                        <span class="text-gray-400 text-sm">Coming Soon</span>
+                        <a href="products/familyshift.html" class="text-keystone-600 font-medium hover:underline inline-block py-2 btn-mobile">
+                            Learn more →
+                        </a>
                     </div>
                 </div>
 
                 <!-- AgentHub -->
                 <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
-                    <div class="h-48 bg-keystone-100 flex items-center justify-center">
-                        <div class="text-6xl">🤖</div>
+                    <div class="h-40 md:h-48 bg-keystone-100 flex items-center justify-center">
+                        <div class="text-5xl md:text-6xl">🤖</div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-gray-900 mb-2">AgentHub</h3>
-                        <p class="text-gray-600 mb-4">
+                    <div class="p-5 md:p-6">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-2">AgentHub</h3>
+                        <p class="text-gray-600 mb-4 text-sm md:text-base">
                             AI receptionists for local businesses. HVAC, mechanics, salons, coffee shops. 
                             Answer calls, book appointments, send follow-ups, generate reviews.
                         </p>
-                        <span class="text-gray-400 text-sm">Coming Soon</span>
+                        <a href="products/agenthub.html" class="text-keystone-600 font-medium hover:underline inline-block py-2 btn-mobile">
+                            Learn more →
+                        </a>
                     </div>
                 </div>
             </div>
@@ -257,9 +303,9 @@
                 <div>
                     <div class="font-semibold text-white mb-4">Products</div>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-white transition">HomeBeacon</a></li>
-                        <li><a href="#" class="hover:text-white transition">FamilyShift</a></li>
-                        <li><a href="#" class="hover:text-white transition">AgentHub</a></li>
+                        <li><a href="products/homebeacon.html" class="hover:text-white transition">HomeBeacon</a></li>
+                        <li><a href="products/familyshift.html" class="hover:text-white transition">FamilyShift</a></li>
+                        <li><a href="products/agenthub.html" class="hover:text-white transition">AgentHub</a></li>
                         <li><a href="https://tarot-decision-demo.vercel.app" class="hover:text-white transition">Tarot Decision App</a></li>
                     </ul>
                 </div>
