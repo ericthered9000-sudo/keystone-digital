@@ -73,7 +73,7 @@
 ## 🎨 Brand Identity
 
 ### Name
-- **Company:** Keystone Digital Corp
+- **Company:** Keystone Digital LLC
 - **Domain:** keystonedigitalcorp.com
 - **Short:** Keystone Digital
 
